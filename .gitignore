@@ -1,0 +1,4 @@
+node_modules/
+safecircle.db
+.DS_Store
+.env

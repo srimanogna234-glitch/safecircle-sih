@@ -1,0 +1,42 @@
+/* Custom Tailwind Extensions / Overrides */
+
+.pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+.nav-btn {
+    transition: all 0.2s ease;
+}
+
+.nav-btn.active-nav {
+    color: #0f172a; /* navy-900 */
+    border-top: 3px solid #0f172a;
+    padding-top: 5px;
+    margin-top: -8px;
+}
+
+/* SOS Progress Ring */
+#btn-sos {
+    transition: transform 0.1s;
+}
+
+/* Modal animations */
+.modal-enter {
+    opacity: 0;
+    transform: scale(0.95);
+}
+.modal-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.2s ease-out;
+}
+
+/* Utilities */
+.view {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
